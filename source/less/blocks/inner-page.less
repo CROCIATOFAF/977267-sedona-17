@@ -2,3 +2,36 @@
   position: relative;
   display: block;
 }
+
+.inner-page__intro-image {
+  position: relative;
+  height: 289px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.inner-page__text-index-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-page__intro-image {
+    height: 518px;
+  }
+
+  .index-intro {
+    margin: 0 auto;
+    width: 495px;
+  }
+
+  .inner-page__text-index-image {
+    height: 578px;
+    width: 460px;
+  }
+}

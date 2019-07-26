@@ -6,6 +6,7 @@
 @import "blocks/page-main.less";
 @import "blocks/advantages.less";
 @import "blocks/hotel-search.less";
+@import "blocks/map.less";
 
 //photo.html
 @import "blocks/photo-intro.less";
@@ -17,29 +18,54 @@
 @import "blocks/form-intro.less";
 @import "blocks/form.less";
 
-@main-color: #81b3d2;
-@background-color: #ffffff;
-@main-text-color: #333333;
-@advantages-color: #eeeeee;
+//variables
+@import "variables.less";
 
+//scaffolding
+@import "scaffolding.less";
+
+// .container {
+//   width: 280px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+// }
+
+// От 320px мобильная версия
 body {
-  font-family: "PT Sans", sans-serif;
-  background-color: red;
+min-width: 320px;
 }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
 .container {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+width: auto;
+padding: 0 20px;
 }
 
-fieldset {
-  border: 0;
+// От 768px планшетная версия
+@media (min-width: 768px) {
+.container {
+width: auto;
+padding: 0 60px;
+}
+}
+
+// От 1200px десктопая версия
+@media (min-width: 1280px) {
+.container {
+width: 1200px;
+padding: 0 40px;
+}
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    background-color: red;
+    min-height: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: pink;
+    min-height: 56px;
+  }
 }

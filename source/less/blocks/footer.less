@@ -1,5 +1,6 @@
 .footer {
   background: @background-color;
+  padding: 0;
 }
 
 .footer-social {
@@ -20,4 +21,38 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.footer-social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-social__item {
+  margin-right: 6px;
+}
+
+.footer-social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+ .footer-social {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .footer__wrapper {
+  width: 648px;
+  margin: 0  60px;
+ }
+}
+
+@media (min-width: @desktop-width) {
+ .footer__wrapper {
+ width: 960px;
+  margin: 0 120px;
+ }
 }
