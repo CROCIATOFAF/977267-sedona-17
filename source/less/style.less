@@ -1,60 +1,60 @@
-@import "content.less";
-
-//index.html
+@import "content.less"; //index.html
 @import "blocks/main-nav.less";
 @import "blocks/footer.less";
 @import "blocks/page-main.less";
 @import "blocks/advantages.less";
 @import "blocks/hotel-search.less";
-@import "blocks/map.less";
-
-//photo.html
+@import "blocks/map.less"; //photo.html
 @import "blocks/photo-intro.less";
 @import "blocks/photographs.less";
 @import "blocks/video.less";
-@import "blocks/inner-page.less";
-
-//form.html
+@import "blocks/inner-page.less"; //form.html
 @import "blocks/form-intro.less";
-@import "blocks/form.less";
-
-//variables
-@import "variables.less";
-
-//scaffolding
-@import "scaffolding.less";
-
-// .container {
+@import "blocks/form.less"; //variables
+@import "variables.less"; //scaffolding
+@import "scaffolding.less"; // .container {
 //   width: 280px;
 //   margin: 0 auto;
 //   padding: 0 20px;
 // }
-
 // От 320px мобильная версия
+
 body {
-min-width: 320px;
-}
-.container {
-width: auto;
-padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
 }
 
+.container {
+  width: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 // От 768px планшетная версия
 @media (min-width: 768px) {
-.container {
-width: auto;
-padding: 0 60px;
+  .container {
+    width: auto;
+    padding: 0 60px;
+  }
 }
-}
-
 // От 1200px десктопая версия
 @media (min-width: 1280px) {
-.container {
-width: 1200px;
-padding: 0 40px;
+  .container {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }
-}
-
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -62,7 +62,6 @@ padding: 0 40px;
     min-height: 56px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .main-nav {
     background-color: pink;
