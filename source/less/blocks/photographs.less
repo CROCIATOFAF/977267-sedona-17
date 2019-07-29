@@ -27,3 +27,52 @@
   background: transparent;
   opacity: 0.3;
 }
+
+.photographs {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.photographs__image {
+  width: 100%;
+}
+@media (min-width: @tablet-width) {
+  .photographs {
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .photographs__item {
+    width: 648px;
+  }
+
+  .photographs__item:nth-child(n+2) {
+    width: 324px;
+  }
+
+  .photographs__list {
+    display: flex;
+    flex-flow: wrap;
+  }
+}
+@media (min-width: @desktop-width) {
+  .photographs {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  .photographs__item {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .photographs__item:nth-child(n+2) {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .photographs__list {
+    display: flex;
+    flex-flow: wrap;
+  }
+}

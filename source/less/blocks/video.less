@@ -1,5 +1,7 @@
 .video {
   padding: 0;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .video__header {
@@ -15,4 +17,50 @@
   text-transform: uppercase;
   color: @main-text-color;
   text-align: center;
+}
+
+.video__wrapper {
+  width: 240px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+.video {
+  margin: 0 auto;
+  width: 648px;
+}
+
+.video__player {
+  width: 648px;
+  height: 500px;
+}
+
+.video__header {
+  font-size: 30px;
+}
+
+.video__wrapper {
+  width: 418px;
+}
+}
+
+@media (min-width: @desktop-width) {
+.video {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.video__wrapper {
+  width: 400px;
+}
+
+.video__player {
+  width: 800px;
+  height: 500px;
+}
+
+.video__header {
+  font-size: 30px;
+}
 }

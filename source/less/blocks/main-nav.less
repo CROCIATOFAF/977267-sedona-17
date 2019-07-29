@@ -1,7 +1,7 @@
 .main-nav {
   background-color: @main-color;
+  min-height: 279px;
 }
-
 
 .main-nav__list {
   color: @background-color;
@@ -12,6 +12,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.menu-open__list {
+  background-color: @background-color;
 }
 
 .site-list {
@@ -25,4 +29,67 @@
 
 .site-list__item {
   padding: 8px;
+}
+
+.page-header__logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.site-list {
+  /* Временно для сетки */
+  min-height: 223px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__open-button {
+    display: none;
+  }
+
+  .main-nav__close-button {
+    display: none;
+  }
+
+  .site-list {
+    width: 700px;
+    /* Временно для сетки */
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+
+  .site-list {
+    width: 1040px;
+  }
 }
