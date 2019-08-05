@@ -1,5 +1,6 @@
 .index-intro {
   text-align: center;
+  padding-top: 33px;
 }
 
 .index-intro__header {
@@ -20,9 +21,10 @@
 .page-main__intro-image {
   position: relative;
   height: 289px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../img/bg-intro-triangle-mobile.svg), url(../img/bg-back-mobile@1x.jpg);
+  background-position: bottom, center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
 }
 
 .page-main__text-index-image {
@@ -38,9 +40,31 @@
   height: 389px;
 }
 
+// .page-main__triangle-image {
+//   width: 100%;
+//   position: absolute;
+//   bottom: 97px;
+//   left: 0px;
+// }
+
+.page-main__triangle-image {
+  width: 100%;
+position: relative;
+top: 348px;
+}
+
+.page-main__triangle-image-2 {
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .page-main__intro-image {
+    position: relative;
     height: 518px;
+    background-image: url(../img/bg-intro-triangle-tablet.svg), url(../img/bg-back-tablet@1x.jpg);
+    background-position: bottom, center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
   }
 
   .index-intro {
@@ -51,5 +75,16 @@
   .page-main__text-index-image {
     height: 350px;
     width: 460px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__intro-image {
+    position: relative;
+    height: 518px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg), url(../img/bg-back-desktop@1x.jpg);
+    background-position: bottom, center;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
   }
 }

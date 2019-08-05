@@ -1,7 +1,10 @@
 .advantages {
   background-color: @main-color;
   width: 320px;
-  margin: 0 auto;
+}
+
+.page-main__background-image {
+  width: 100%;
 }
 
 .advantages__header {
@@ -15,6 +18,7 @@
   text-align: center;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages__text {
@@ -28,6 +32,7 @@
   text-align: left;
   background-color: @background-color;
   list-style-type: none;
+  padding: 30px 40px;
 }
 
 .advantages__advice-header {
@@ -45,6 +50,8 @@
 
 .advantages__item--modifier {
   background-color: @advantages-color;
+  padding: 20px 36px;
+  position: relative;
 }
 
 .advantages__header--modifier {
@@ -65,6 +72,31 @@
   list-style-type: none;
   padding: 0;
 }
+
+.page-main__bridge-image {
+  width: 100%;
+}
+
+@media (max-width: @mobile-width-only) {
+.advantages__item--modifier:nth-child(-n+2)::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.advantages__item-column {
+  background-image: url(../img/bg-triangle.svg);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 37px 20px 0px 20px;
+}
+}
+
+
 // .advantages__item {
 //   padding-top: 47px;
 //   padding-right: 27px;
@@ -82,6 +114,32 @@
     min-height: 330px;
     text-align: center;
     padding: 0;
+  }
+
+  .advantages__item-column {
+    width: 256px;
+    padding-top: 33px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .advantages__item-column--right {
+    float: right;
+  }
+
+  .advantages__item--image-left {
+    min-height: 256px;
+    background-image: url(../img/main-bridge-tablet@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .advantages__item--image-right {
+    min-height: 256px;
+    background-image: url(../img/main-city-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   .advantages__advice-item {
@@ -108,6 +166,28 @@
     min-height: 330px;
     text-align: center;
     padding: 0;
+  }
+
+  .advantages__item--image-left {
+    min-height: 256px;
+    background-image: url(../img/main-bridge-desktop@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .advantages__item--image-right {
+    min-height: 256px;
+    background-image: url(../img/main-city-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .advantages__item-column {
+    width: 400px;
+    padding-top: 33px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .advantages__advice-item {
