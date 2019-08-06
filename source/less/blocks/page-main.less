@@ -1,6 +1,8 @@
 .index-intro {
   text-align: center;
-  padding-top: 33px;
+  padding-top: 39px;
+  margin: 0 25px;
+  padding-bottom: 8px;
 }
 
 .index-intro__header {
@@ -16,6 +18,7 @@
   line-height: 26px;
   color: @main-text-color;
   margin: 0;
+  padding-top: 28px;
 }
 
 .page-main__intro-image {
@@ -70,12 +73,34 @@ top: 348px;
   .index-intro {
     margin: 0 auto;
     width: 495px;
+    padding:49px 0;
   }
 
   .page-main__text-index-image {
     height: 350px;
     width: 460px;
   }
+
+  .page-main__text-index-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 12px;
+    margin: auto;
+}
+
+.index-intro__header {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+}
+
+
+.index-intro__text {
+  padding-top: 30px;
+}
 }
 
 @media (min-width: @desktop-width) {
@@ -87,4 +112,13 @@ top: 348px;
     background-size: 100%, cover;
     background-repeat: no-repeat;
   }
+
+  .page-main__text-index-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 12px;
+    margin: auto;
+}
 }

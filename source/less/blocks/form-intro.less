@@ -3,6 +3,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
 }
 
 .form-intro__text {
@@ -11,6 +12,8 @@
   line-height: 24px;
   color: @main-text-color;
   text-align: center;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .form-intro__wrapper {
@@ -18,10 +21,20 @@
   margin: 0 auto;
 }
 
+.form-intro {
+  background-color: @background-color;
+  padding-top: 39px;
+  padding-bottom: 19px;
+  position: relative;
+  margin-top: -133px;
+}
+
+
 @media (min-width: @tablet-width) {
 .form-intro__header {
   text-transform: uppercase;
   font-size: 30px;
+  margin: 0;
 }
 
 .form-intro__wrapper {
@@ -29,4 +42,34 @@
   margin: 0 auto;
 }
 
+.form-intro__text {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 2px;
+}
+
+.form-intro {
+  background-color: white;
+  padding-top: 76px;
+  padding-bottom: 47px;
+  position: relative;
+  margin-top: -230px;
+}
+
+}
+
+@media (min-width: @desktop-width) {
+  .form-intro {
+    margin-top: -219px;
+    position: relative;
+    background-color: red;
+    padding-top: 113px;
+    background-color: @background-color;
+  }
+
+  .inner-page__text-index-image {
+    height: 578px;
+    width: 460px;
+    bottom: 237px;
+}
 }
