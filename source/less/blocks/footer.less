@@ -18,6 +18,11 @@
 
 .footer-social__icon {
   vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .footer-social__header {
@@ -34,14 +39,6 @@
   text-transform: uppercase;
 }
 
-.footer-social__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  padding-bottom: 30px;
-}
-
 .footer-social__item {
   margin-right: 6px;
 }
@@ -49,6 +46,7 @@
 .footer-social__item:nth-child(3n) {
   margin-right: 0;
 }
+
 @media (min-width: @tablet-width) {
   .footer-social {
     display: flex;
@@ -71,6 +69,7 @@
     margin: auto 0;
   }
 }
+
 @media (min-width: @desktop-width) {
   .footer__wrapper {
     width: 960px;
