@@ -42,13 +42,13 @@
   text-align: left;
   background-color: @background-color;
   list-style-type: none;
-  padding: 30px 40px;
 }
 
 .advantages__advice-header {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages__advice-text {
@@ -56,12 +56,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @main-text-color;
-}
-
-.advantages__item--modifier {
-  background-color: @advantages-color;
-  padding: 20px 36px;
-  position: relative;
+  margin: 0;
 }
 
 .advantages__header--modifier {
@@ -92,10 +87,11 @@
     left: 20px;
     height: 1px;
     background-color: #d6d6d6;
+    z-index: 1;
   }
 
 
-  .advantages__item-column {
+  .advantages__item-column--left {
     background-image: url("../img/bg-triangle.svg");
     background-position: top;
     background-size: 100%;
@@ -103,23 +99,61 @@
     padding: 76px 20px 40px 20px;
   }
 
-
   .advantages__text--number {
     margin: 0;
     padding: 12px 0;
   }
-}
 
-// .advantages__item {
-//   padding-top: 47px;
-//   padding-right: 27px;
-//   padding-bottom: 35px;
-//   padding-left: 27px;
-// }
+  .advantages__item--image-left {
+    min-height: 448px;
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .advantages__item--image-right {
+    min-height: 487px;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .advantages__item-column--right {
+    padding: 36px 20px 40px 20px;
+  }
+
+  .advantages__advice-text {
+    padding-top: 14px;
+    padding-bottom: 28px;
+  }
+
+  .advantages__advice-list {
+    padding-top: 37px;
+    padding-left: 69px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+  }
+
+  .advantages__text {
+    padding-bottom: 27px;
+  }
+
+  .advantages__item--modifier {
+    background-color: @advantages-color;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .advantages {
     width: 768px;
+  }
+
+  .advantages__advice-text {
+    padding-top: 22px;
   }
 
   .advantages__advice-list {
@@ -158,6 +192,7 @@
 
   .advantages__advice-item {
     width: 256px;
+    padding-top: 159px;
   }
 
   .advantages__item--modifier {
@@ -168,6 +203,7 @@
   .advantages__list--modifier {
     width: 768px;
     display: flex;
+    background-color: @advantages-color;
   }
 
   .advantages__header {
@@ -183,6 +219,23 @@
   .advantages__text {
     margin: 0;
     padding-top: 21px;
+  }
+
+  .advantages__advice-header {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .advantages__advice-list .advantages__advice-item:nth-child(1) {
+    order: 1;
+  }
+
+  .advantages__advice-list .advantages__advice-item:nth-child(2) {
+    order: 3;
+  }
+
+  .advantages__advice-list .advantages__advice-item:nth-child(3) {
+    order: 2;
   }
 }
 
@@ -228,7 +281,7 @@
   .advantages__item--modifier {
     width: 400px;
     padding-top: 45px;
-    padding-bottom: 65px;
+    padding-bottom: 92px;
   }
 
   .advantages__list--modifier {
