@@ -1,0 +1,28 @@
+.menu-open__list {
+  background-color: @background-color;
+  min-height: 56px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .menu-open__list-item--open {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .menu-open__list{
+    min-height: 0;
+    position: absolute;
+    top: 0;
+    left: 333px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-open__list {
+    min-height: 0;
+    position: absolute;
+    top: 0;
+    left: 547px;
+  }
+}
