@@ -1,16 +1,44 @@
-
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: PeachPuff;
+  background-color: peachpuff;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.visually-hidden {
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   clip: rect(0, 0, 0, 0);
+// }
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 fieldset {
   border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

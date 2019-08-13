@@ -10,61 +10,12 @@
 @import "blocks/video.less";
 @import "blocks/inner-page.less"; //form.html
 @import "blocks/form-intro.less";
-@import "blocks/form.less"; //variables
-@import "variables.less"; //scaffolding
-@import "scaffolding.less"; // .container {
-//   width: 280px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-// От 320px мобильная версия
-
-body {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.container {
-  width: auto;
-  padding: 0 20px;
-}
-
-@media (min-width: @tablet-width) {
-  body {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: @desktop-width) {
-  body {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-// От 768px планшетная версия
-@media (min-width: 768px) {
-  .container {
-    width: auto;
-    padding: 0 60px;
-  }
-}
-// От 1200px десктопая версия
-@media (min-width: 1280px) {
-  .container {
-    width: 1200px;
-    padding: 0 40px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav {
-    background-color: red;
-    min-height: 56px;
-  }
-}
-@media (min-width: @desktop-width) {
-  .main-nav {
-    background-color: pink;
-    min-height: 56px;
-  }
-}
+@import "blocks/form.less";
+@import "variables.less"; //variables
+@import "scaffolding.less";//scaffolding
+@import "blocks/site-list.less";
+@import "blocks/footer-copyright.less";
+@import "blocks/footer-social.less";
+@import "blocks/index-intro.less";
+@import "blocks/text-wrap.less";
+@import "blocks/container.less";

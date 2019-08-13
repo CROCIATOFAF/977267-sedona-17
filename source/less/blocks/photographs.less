@@ -1,18 +1,22 @@
 .photographs__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .photographs__header {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 9px;
 }
 
 .photographs__text {
   font-size: 14px;
   line-height: 24px;
   color: @main-text-color;
+  margin: 0;
 }
 
 .photographs__counter {
@@ -26,6 +30,9 @@
   text-decoration: none;
   background: transparent;
   opacity: 0.3;
+  padding: 0;
+  padding-top: 8px;
+  margin-right: 11px;
 }
 
 .photographs {
@@ -36,6 +43,14 @@
 .photographs__image {
   width: 100%;
 }
+
+@media (max-width: @mobile-width-only) {
+  .photographs__item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .photographs {
     margin: 0 auto;
@@ -50,11 +65,34 @@
     width: 324px;
   }
 
+  .photographs__image {
+    height: 400px;
+  }
+
+  .photographs__image--modifier {
+    height: 267px;
+  }
+
   .photographs__list {
     display: flex;
     flex-flow: wrap;
   }
+
+  .photographs__item-info {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 19px;
+  }
+
+  .photographs__button {
+    margin: 0;
+    padding-top: 17px;
+  }
 }
+
 @media (min-width: @desktop-width) {
   .photographs {
     margin: 0 auto;
@@ -64,6 +102,7 @@
   .photographs__item {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
   }
 
   .photographs__item:nth-child(n+2) {
@@ -74,5 +113,18 @@
   .photographs__list {
     display: flex;
     flex-flow: wrap;
+  }
+
+  .photographs__item-info {
+    background-color: rgba(28, 20, 16, 0.3);
+    color: #ffffff;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .photographs__text {
+    color: #ffffff;
   }
 }
