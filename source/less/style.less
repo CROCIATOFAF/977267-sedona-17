@@ -17,57 +17,5 @@
 @import "blocks/footer-copyright.less";
 @import "blocks/footer-social.less";
 @import "blocks/index-intro.less";
-@import "blocks/menu-open.less";
-@import "blocks/mobile-nav.less";
-
-// .container {
-//   width: 280px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-// От 320px мобильная версия
-
-// .container {
-//   width: auto;
-//   padding: 0 20px;
-// }
-
-@media (min-width: @tablet-width) {
-  body {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-// От 768px планшетная версия
-@media (min-width: 768px) {
-  .container {
-    width: auto;
-  }
-}
-// От 1200px десктопая версия
-// @media (min-width: 1280px) {
-//   .container {
-//     width: 1200px;
-//   }
-// }
-
-@media (min-width: @tablet-width) {
-  .main-nav {
-    // background-color: red;
-    min-height: 56px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav {
-    background-color: pink;
-    min-height: 56px;
-  }
-}
+@import "blocks/text-wrap.less";
+@import "blocks/container.less";
