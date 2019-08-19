@@ -65,10 +65,13 @@
   left: 17px;
 
   width: 23px;
-  height: 4px;
+  height: 22px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
-  background-color: @main-color;
-  box-shadow: 0 8px 0 0 @main-color, 0 16px 0 0 @main-color;
+  // background-color: @main-color;
+  // box-shadow: 0 8px 0 0 @main-color, 0 16px 0 0 @main-color;
 }
 
 .main-nav--closed .main-nav__open-toggle:active::before {
@@ -92,22 +95,32 @@
     width: 27px;
     height: 4px;
 
-    background-color: @background-color;
-  }
+    position: absolute;
+    top: 15px;
+    left: 17px;
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
+    width: 23px;
+    height: 22px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
-  &::after {
-    transform: rotate(-45deg);
+    // background-color: @background-color;
   }
-
-  &:active::before,
-  &:active::after {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+  //
+  // &::before {
+  //   transform: rotate(45deg);
+  //   box-shadow: none;
+  // }
+  //
+  // &::after {
+  //   transform: rotate(-45deg);
+  // }
+  //
+  // &:active::before,
+  // &:active::after {
+  //   background-color: rgba(255, 255, 255, 0.3);
+  // }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -171,5 +184,12 @@
     position: absolute;
     top: 0;
     left: 547px;
+  }
+
+  .main-nav__open-logo-image {
+    width: 188px;
+    height: 96px;
+    right: 43px;
+    position: relative;
   }
 }

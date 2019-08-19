@@ -20,17 +20,19 @@
   // box-shadow: inset 0px 1px rgba(1, 1, 1, 0.2);
 }
 
+@media (max-width: @mobile-width-only) {
 .site-list a[href] {
   &:hover {
-    background-color: #669ec0;
-    border-top-color: #86b2cd;
+    background-color: @button-hover-color;
+    border-top-color: @border-top-color-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-    border-top-color: #77acca;
+    background-color: @button-down-color;
+    border-top-color: @border-top-color-active;
   }
+}
 }
 
 @media (min-width: @tablet-width) {
@@ -64,15 +66,23 @@
 
   .site-list__item a[href] {
     &:hover {
-      color: #826550;
-
-      background-color: #000000;
+      color: @main-color;
     }
 
     &:active {
-      color: #ffffff;
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
 
-      background-color: #000000;
+  .site-list__item--active a {
+      color: @active-menu-color;
+    &:hover {
+      color: @active-menu-color-hover;
+    }
+
+    &:active {
+      color: @active-menu-color;
       opacity: 0.3;
     }
   }
@@ -90,7 +100,6 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .site-list__item {
     margin-right: 0;
@@ -104,21 +113,6 @@
   .site-list a {
     font-size: 14px;
     line-height: 26px;
-  }
-
-  .site-list__item a[href] {
-    &:hover {
-      color: #000000;
-
-      background-color: #ffffff;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-
-      background-color: #ffffff;
-      opacity: 1;
-    }
   }
 
   .site-list__item a {

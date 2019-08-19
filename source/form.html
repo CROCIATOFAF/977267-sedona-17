@@ -58,39 +58,41 @@
     <section class="form">
       <form class="form__post" action="index.html" method="post">
         <fieldset>
-          <legend class="form__header">Представьтесь:</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label" for="user-login">Имя*:</label>
-              <input class="form__input" id="user-name" type="text" name="name" placeholder="Петр" required>
+          <h4 class="form__header">Представьтесь:</h4>
+          <ul class="form__list form__list-introduce">
+            <li class="form__item form__item-introduce">
+              <label class="form__label form__list-introduce-label" for="user-login">Имя*:</label>
+              <input class="form__input form__list-introduce-input" id="user-name" type="text" name="name" placeholder="Петр" required>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-introduce">
               <label class="form__label" for="user-login">Фамилия*:</label>
               <input class="form__input" id="user-surname" type="text" name="surname" placeholder="Иванов" required>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-introduce">
               <label class="form__label" for="user-login">Отчество:</label>
               <input class="form__input" id="user-fathers-name" type="text" name="fathers-name" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend class="form__header">Контактная информация:</legend>
+        <fieldset class="form__section--contact-info">
+          <h4 class="form__header form__header--contact-info">Контактная информация:</h4>
           <ul class="form__list">
             <li>
-              <label class="form__label" for="tel">Контактный телефон*:</label>
+              <label class="form__label form__label--contact-info" for="tel">Контактный телефон*:</label>
               <input class="form__input form__input--contacts" id="tel" type="tel" name="tel" pattern="((8|\+7)-?)?\(?\d{3}\)?-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}" placeholder="Введите телефон" required>
-              <svg></svg>
+              <!-- <svg></svg> -->
             </li>
             <li>
-              <label class="form__label" for="email">Электронная почта*:</label>
-              <input class="form__input form__input--contacts" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-              <svg></svg>
+              <label class="form__label form__label--contact-info">
+                <input class="form__input form__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
+                <span></span>Электронная почта*:
+              </label>
+              <!-- <svg></svg> -->
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="form__header">Ваше общее впечатление:</legend>
+          <h4 class="form__header">Ваше общее впечатление:</h4>
           <ul class="form__list">
             <li>
               <label class="form__label form__label--radio" for="filter-impression-1">
@@ -113,7 +115,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="form__header">Посещенные достопримечательности:</legend>
+          <h4 class="form__header">Посещенные достопримечательности:</h4>
           <ul class="form__list">
             <li>
               <label class="form__label form__label--checkbox" for="filter-sights">
@@ -142,7 +144,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="form__header">Опишите свои эмоции:</legend>
+          <h4 class="form__header">Опишите свои эмоции:</h4>
           <p class=" ">
             <!-- <label class=" " for="letter">Опишите свои эмоции:</label> -->
             <textarea class="form__textarea" id="letter" name="feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>

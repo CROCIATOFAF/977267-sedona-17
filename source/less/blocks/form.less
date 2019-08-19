@@ -1,5 +1,4 @@
 .form {
-  width: 280px;
   margin: 0 auto;
 }
 
@@ -21,6 +20,7 @@
 .form__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .form__input {
@@ -62,6 +62,19 @@
   font-weight: bold;
   border: 0;
   padding: 0;
+
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:active {
+    background-color: @button-down-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @button-disabled-color;
+  }
 }
 
 fieldset {
@@ -69,8 +82,98 @@ fieldset {
   margin: 0;
 }
 
+.form__input {
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 25px;
+
+  &::placeholder {
+    color: #000000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: PT Sans;
+  }
+
+  &:hover {
+    background-color: @form-input-color-hover;
+  }
+
+  &:focus {
+    background-color: @form-input-color-active;
+    // border: 4px solid @inpit-active-color;
+    outline: none;
+    box-shadow: 0px 0px 0px 4px @inpit-active-color inset;
+  }
+}
+
+.form__textarea {
+  background-color: #f2f2f2;
+  outline: none;
+  resize: none;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 20px;
+
+  &::placeholder{
+    color: #000000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: PT Sans;
+  }
+
+  &:hover {
+    background-color: @form-input-color-hover;
+  }
+
+  &:focus {
+    background-color: @form-input-color-active;
+    // border: 4px solid @inpit-active-color;
+    outline: none;
+    box-shadow: 0px 0px 0px 4px @inpit-active-color inset;
+  }
+}
+
 .form__input--contacts {
   width: 100%;
+}
+
+.form__item {
+  display: flex;
+  // justify-content: space-between;
+}
+
+@media (max-width: @mobile-width-only) {
+  .form {
+    margin: 0 20px;
+    overflow: hidden;
+  }
+
+  .form__label {
+    margin-right: 14px;
+    padding-top: 16px;
+  }
+
+  .form__input {
+    padding: 16px;
+  }
+
+  .form__label--contact-info {
+    margin: 0;
+    padding: 0;
+    margin-left: 22px;
+  }
+
+  .form__header--contact-info {
+    padding-bottom: 22px;
+  }
+
+  .form__section--contact-info {
+    padding-bottom: 28px;
+  }
+
 }
 
 @media (min-width: @tablet-width) {
