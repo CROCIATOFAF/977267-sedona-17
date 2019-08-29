@@ -2,9 +2,78 @@
   text-align: center;
 }
 
-.footer-social__list {
-  list-style-type: none;
-  margin: 0;
+// .footer-social__list {
+//   list-style-type: none;
+//   margin: 0;
+// }
+
+.footer-social__link {
+  text-decoration: none;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: @main-color;
+  margin: 0 3px;
+  display: inline-block;
+
+  &:hover {
+    background-color: @button-hover-color;
+  }
+
+  &:active {
+    background-color: @button-down-color;
+  }
+}
+
+.footer-social__link svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  // width: 18px;
+  // height: 14px;
+  fill: @background-color;
+}
+
+// .footer-social__link:hover + .footer-social__link svg {
+//   background-color: @button-hover-color;
+// }
+//
+// .footer-social__link:active + .footer-social__link svg {
+//   background-color: @button-down-color;
+//   opacity: 0.3;
+// }
+
+// .footer-social__link:active + .footer-social__link svg:active {
+//   opacity: 0.3;
+// }
+
+.footer-social__link:active path {
+  opacity: 0.3;
+}
+
+
+.footer-copyright__link {
+  position: relative;
+}
+
+.footer-copyright__link svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 27px;
+  height: 34px;
+  fill: #000000;
+  display: block;
+  &:hover {
+    fill: @main-color;
+  }
+
+  &:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
 }
 
 .footer-social__header {
@@ -40,24 +109,24 @@
     padding-bottom: 26px;
   }
 
-  .footer-social__icon {
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    padding-bottom: 30px;
-
-    &:hover {
-      fill:red;
-      color: red;
-    }
-
-    &:active {
-      color: red;
-      fill: red;
-    }
-  }
+  // .footer-social__icon {
+  //   vertical-align: middle;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 0;
+  //   padding-bottom: 30px;
+  //
+  //   &:hover {
+  //     fill: red;
+  //     color: red;
+  //   }
+  //
+  //   &:active {
+  //     color: red;
+  //     fill: red;
+  //   }
+  // }
 }
 
 
