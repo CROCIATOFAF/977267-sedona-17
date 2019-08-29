@@ -40,13 +40,13 @@
 }
 
 .form__checkbox-tick::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/icon-tick.svg');
+  background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px 16px;
@@ -79,9 +79,9 @@
 
 
 .form__radio-button-circle::after {
-  content: '';
+  content: "";
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: @radio-button-color;
@@ -145,16 +145,6 @@
   }
 }
 
-.form__textarea {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: none;
-  width: 100%;
-  padding: 0;
-  height: 160px;
-}
-
 .form__send-button {
   background-color: @main-color;
   color: @background-color;
@@ -211,7 +201,7 @@ fieldset {
     background-color: @form-input-color-active;
     // border: 4px solid @inpit-active-color;
     outline: none;
-    box-shadow: 0px 0px 0px 4px @inpit-active-color inset;
+    box-shadow: 0 0 0 4px @inpit-active-color inset;
   }
 }
 
@@ -219,17 +209,24 @@ fieldset {
   background-color: #f2f2f2;
   outline: none;
   resize: none;
+  padding: 0;
   border: none;
   box-sizing: border-box;
   padding-top: 15px;
   padding-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  width: 100%;
+  height: 160px;
 
   &::placeholder {
     color: #000000;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans, sans-serif";
   }
 
   &:hover {
@@ -240,7 +237,7 @@ fieldset {
     background-color: @form-input-color-active;
     // border: 4px solid @inpit-active-color;
     outline: none;
-    box-shadow: 0px 0px 0px 4px @inpit-active-color inset;
+    box-shadow: 0 0 0 4px @inpit-active-color inset;
   }
 }
 
@@ -260,7 +257,7 @@ fieldset {
   position: relative;
 }
 
-.form__item--contacts svg{
+.form__item--contacts svg {
   position: absolute;
   right: 21px;
   bottom: 21px;
@@ -345,7 +342,7 @@ fieldset {
 
   .form__list-item--radio {
     margin-bottom: 6px;
-}
+  }
 
   .form__header--radio {
     margin-bottom: 44px;
@@ -397,10 +394,6 @@ fieldset {
     margin-bottom: 58px;
   }
 
-  .form__send-button {
-    order: 6;
-  }
-
   .form__item-introduce {
     margin-bottom: 20px;
     display: flex;
@@ -441,8 +434,8 @@ fieldset {
     margin-bottom: 7px;
   }
 
-  .form__header--contact-info:before,
-  .form__header--contact-info:after {
+  .form__header--contact-info::before,
+  .form__header--contact-info::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -452,12 +445,12 @@ fieldset {
     width: 125px;
   }
 
-  .form__header--contact-info:before {
+  .form__header--contact-info::before {
     right: 59px;
   }
 
-  .form__header--contact-info:after {
-    left: 62px;;
+  .form__header--contact-info::after {
+    left: 62px;
   }
 
   .form__item--contacts {
@@ -470,8 +463,8 @@ fieldset {
     padding: 0 120px;
   }
 
-  .form__header--visited:before,
-  .form__header--visited:after {
+  .form__header--visited::before,
+  .form__header--visited::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -481,11 +474,11 @@ fieldset {
     width: 125px;
   }
 
-  .form__header--visited:before {
+  .form__header--visited::before {
     right: 59px;
   }
 
-  .form__header--visited:after {
+  .form__header--visited::after {
     left: 62px;;
   }
 
@@ -509,13 +502,14 @@ fieldset {
   }
 
   .form__send-button {
+    order: 6;
     width: 324px;
     margin: 0;
     margin-top: 37px;
   }
 
-  .form__header--textarea:before,
-  .form__header--textarea:after {
+  .form__header--textarea::before,
+  .form__header--textarea::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -525,12 +519,12 @@ fieldset {
     width: 125px;
   }
 
-  .form__header--textarea:before {
+  .form__header--textarea::before {
     right: 73px;
   }
 
-  .form__header--textarea:after {
-    left: 77px;;
+  .form__header--textarea::after {
+    left: 77px;
   }
 }
 
@@ -590,8 +584,8 @@ fieldset {
     margin: 0;
   }
 
-  .form__header--textarea:before,
-  .form__header--textarea:after {
+  .form__header--textarea::before,
+  .form__header--textarea::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -601,16 +595,16 @@ fieldset {
     width: 280px;
   }
 
-  .form__header--textarea:before {
+  .form__header--textarea::before {
     right: 74px;
   }
 
-  .form__header--textarea:after {
-    left: 76px;;
+  .form__header--textarea::after {
+    left: 76px;
   }
 
-  .form__header--visited:before,
-  .form__header--visited:after {
+  .form__header--visited::before,
+  .form__header--visited::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -620,12 +614,12 @@ fieldset {
     width: 282px;
   }
 
-  .form__header--visited:before {
+  .form__header--visited::before {
     right: 59px;
   }
 
-  .form__header--visited:after {
-    left: 62px;;
+  .form__header--visited::after {
+    left: 62px;
   }
 
   .form__list-contacts {
@@ -638,8 +632,8 @@ fieldset {
     }
   }
 
-  .form__header--contact-info:before,
-  .form__header--contact-info:after {
+  .form__header--contact-info::before,
+  .form__header--contact-info::after {
     background-color: @border-line-color;
     content: "";
     display: inline-block;
@@ -649,11 +643,11 @@ fieldset {
     width: 280px;
   }
 
-  .form__header--contact-info:before {
+  .form__header--contact-info::before {
     right: 60px;
   }
 
-  .form__header--contact-info:after {
-    left: 61px;;
+  .form__header--contact-info::after {
+    left: 61px;
   }
 }
