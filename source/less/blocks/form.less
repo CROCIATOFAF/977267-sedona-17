@@ -292,6 +292,7 @@ fieldset {
 
   .form__list-introduce-label {
     padding-top: 16px;
+    margin-right: 14px;
   }
 
   .form__section--introduce {
@@ -389,11 +390,6 @@ fieldset {
     width: 648px;
   }
 
-  .form__header {
-    font-size: 21px;
-    line-height: 26px;
-  }
-
   .form__list-item--radio {
     margin-bottom: 21px;
   }
@@ -445,11 +441,6 @@ fieldset {
     margin: 0;
   }
 
-  .form__header--textarea {
-    margin-bottom: 58px;
-    margin-top: 39px;
-  }
-
   .form__item-introduce {
     margin-bottom: 20px;
     display: flex;
@@ -486,13 +477,10 @@ fieldset {
     margin-left: 56px;
   }
 
-  .form__header--contact-info {
-    margin-top: 50px;
-    margin-bottom: 7px;
-  }
-
   .form__header {
     position: relative;
+    font-size: 21px;
+    line-height: 26px;
 
     &:not(&--introduce):not(&--radio)::before {
       background-color: @border-line-color;
@@ -510,11 +498,13 @@ fieldset {
     span {
       position: relative;
       z-index: 2;
-      background-color: #fff;
+      background-color: @background-color;
       display: inline-block;
     }
 
     &--contact-info {
+      margin-top: 50px;
+      margin-bottom: 7px;
       span {
         padding-left: 59px;
         padding-right: 59px;
@@ -526,10 +516,14 @@ fieldset {
         padding-left: 61px;
         padding-right: 61px;
         width: 280px;
+        margin-top: 49px;
+        margin-bottom: 41px;
       }
     }
 
     &--textarea {
+      margin-bottom: 58px;
+      margin-top: 39px;
       span {
         padding-left: 73px;
         padding-right: 73px;
@@ -539,11 +533,6 @@ fieldset {
 
   .form__item--contacts {
     margin-bottom: 6px;
-  }
-
-  .form__header--visited {
-    margin-top: 49px;
-    margin-bottom: 41px;
   }
 
   .form__list--checkbox {
