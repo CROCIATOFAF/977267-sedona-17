@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-// .footer-social__list {
-//   list-style-type: none;
-//   margin: 0;
-// }
-
 .footer-social__link {
   text-decoration: none;
   position: relative;
@@ -30,40 +25,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  // width: 18px;
-  // height: 14px;
   fill: @background-color;
 }
-
-// .footer-social__link:hover + .footer-social__link svg {
-//   background-color: @button-hover-color;
-// }
-//
-// .footer-social__link:active + .footer-social__link svg {
-//   background-color: @button-down-color;
-//   opacity: 0.3;
-// }
-
-// .footer-social__link:active + .footer-social__link svg:active {
-//   opacity: 0.3;
-// }
 
 .footer-social__link:active path {
   opacity: 0.3;
 }
-
-
-.footer-copyright__link {
-  position: relative;
-}
-
 
 .footer-social__header {
   font-size: 21px;
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 30px;
 }
 
 .footer-social__item {
@@ -78,27 +51,7 @@
   .footer-social__header {
     padding: 0;
     margin-bottom: 37px;
-    margin-top: 75px;
-  }
-
-  .footer-copyright__link svg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 27px;
-    height: 34px;
-    fill: #000000;
-    display: block;
-
-    &:hover {
-      fill: @main-color;
-    }
-
-    &:active {
-      fill: #000000;
-      opacity: 0.3;
-    }
+    margin-top: 37px;
   }
 
   .footer-social__social-buttons {
@@ -112,32 +65,11 @@
     align-items: center;
     padding-bottom: 26px;
   }
-
-  // .footer-social__icon {
-  //   vertical-align: middle;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   padding: 0;
-  //   padding-bottom: 30px;
-  //
-  //   &:hover {
-  //     fill: red;
-  //     color: red;
-  //   }
-  //
-  //   &:active {
-  //     color: red;
-  //     fill: red;
-  //   }
-  // }
 }
-
 
 @media (min-width: @tablet-width) {
   .footer-social {
     display: flex;
-    // justify-content: space-between;
     padding-top: 36px;
     padding-bottom: 32px;
   }
@@ -152,16 +84,16 @@
     padding: 0;
     margin: 0;
     margin-top: 11px;
-    margin-right: 112px;
+    margin-right: 110px;
   }
 
   .footer-social__social-buttons {
-    margin-right: 118px;
+    margin-right: 114px;
+    display: flex;
   }
 
-  .footer-copyright__text {
-    margin-top: 10px;
-    text-align: left;
+  .footer-social__link {
+    margin: 0 3px;
   }
 }
 
@@ -174,14 +106,15 @@
 
   .footer-social {
     padding-top: 32px;
+    padding-bottom: 36px;
   }
 
   .footer-social__header {
     margin-top: 11px;
-    margin-right: 268px;
+    margin-right: 267px;
   }
 
   .footer-social__social-buttons {
-    margin-right: 276px;
+    margin-right: 269px;
   }
 }

@@ -1,5 +1,6 @@
 .form {
   margin: 0 auto;
+  margin-bottom: 74px;
 }
 
 .form__header {
@@ -157,6 +158,8 @@
   border: 0;
   padding: 0;
   margin: 0 20px;
+  font-family: inherit;
+  margin-top: 46px;
 
   &:hover {
     background-color: @button-hover-color;
@@ -199,7 +202,6 @@ fieldset {
 
   &:focus {
     background-color: @form-input-color-active;
-    // border: 4px solid @inpit-active-color;
     outline: none;
     box-shadow: 0 0 0 4px @inpit-active-color inset;
   }
@@ -235,7 +237,6 @@ fieldset {
 
   &:focus {
     background-color: @form-input-color-active;
-    // border: 4px solid @inpit-active-color;
     outline: none;
     box-shadow: 0 0 0 4px @inpit-active-color inset;
   }
@@ -246,11 +247,6 @@ fieldset {
   box-sizing: border-box;
   height: 58px;
 }
-
-// .form__item {
-//   display: flex;
-//   // justify-content: space-between;
-// }
 
 .form__item--contacts {
   margin-bottom: 14px;
@@ -286,10 +282,6 @@ fieldset {
     display: none;
   }
 
-  .form__send-button {
-    margin-top: 46px;
-  }
-
   .form__list-introduce-label {
     padding-top: 16px;
     margin-right: 14px;
@@ -297,7 +289,7 @@ fieldset {
 
   .form__section--introduce {
     border-top: 1px solid @border-line-color;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   .form__header--visited {
@@ -320,7 +312,7 @@ fieldset {
   }
 
   .form__header--introduce {
-    margin-top: 17px;
+    margin-top: 18px;
   }
 
   .form__input {
@@ -359,7 +351,7 @@ fieldset {
 
   .form__section--contact-info {
     border-top: 1px solid @border-line-color;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .form__list {
@@ -376,7 +368,7 @@ fieldset {
   }
 
   .form__item-introduce {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     display: flex;
   }
 }
@@ -455,10 +447,6 @@ fieldset {
     margin-top: 17px;
   }
 
-  // .form__label {
-  //   padding-top: 16px;
-  // }
-
   .form__radio-button-circle {
     margin-right: 15px;
   }
@@ -466,7 +454,7 @@ fieldset {
   .form__label--contact-info {
     padding-top: 18px;
     padding-left: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
   .form__list-introduce {
@@ -513,14 +501,14 @@ fieldset {
         padding-left: 61px;
         padding-right: 61px;
         width: 280px;
-        margin-top: 49px;
-        margin-bottom: 41px;
+        margin-top: 47px;
+        margin-bottom: 43px;
       }
     }
 
     &--textarea {
       margin-bottom: 58px;
-      margin-top: 39px;
+      margin-top: 37px;
 
       span {
         padding-left: 73px;
@@ -557,6 +545,7 @@ fieldset {
     width: 324px;
     margin: 0;
     margin-top: 37px;
+    font-family: inherit;
   }
 
   .obligatory-field {
@@ -566,7 +555,7 @@ fieldset {
     margin: 0;
     padding: 0;
     margin-top: 55px;
-    margin-left: 161px;
+    margin-left: auto;
     font-family: inherit;
     text-transform: uppercase;
     color: @main-text-color;
@@ -586,6 +575,7 @@ fieldset {
 @media (min-width: @desktop-width) {
   .form {
     width: 960px;
+    margin-bottom: 70px;
   }
 
   .form__section--impressions {
@@ -594,6 +584,7 @@ fieldset {
 
     .form__header--radio {
       margin-left: 81px;
+      margin-bottom: 59px;
     }
 
     .form__list--radio {
@@ -617,7 +608,7 @@ fieldset {
   .form__send-button {
     width: 480px;
     margin: 0;
-    margin-top: 37px;
+    margin-top: 38px;
   }
 
   .form__list--checkbox {
@@ -632,15 +623,60 @@ fieldset {
 
   .form__list-contacts {
     display: flex;
+    justify-content: space-between;
 
     .form__item--contacts {
-      width: 480px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
     }
   }
 
   .contacts-label-short {
     display: none;
+  }
+
+  .form__label--contact-info {
+    padding: 0;
+    margin: 0;
+    margin-right: 16px;
+    width: 100%;
+  }
+
+  .form__input--contacts {
+    min-width: 315px;
+  }
+
+  .form__item--first {
+    width: 400px;
+  }
+
+  .form__item--second {
+    width: 480px;
+  }
+
+  .form__header--contact-info {
+    margin-bottom: 74px;
+    margin-top: 46px;
+  }
+
+
+  .form__header--visited {
+
+    span {
+      padding-left: 61px;
+      padding-right: 61px;
+      width: 280px;
+      margin-top: 47px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .form__header--textarea {
+    margin-top: 66px;
+    margin-bottom: 57px;
+  }
+
+  .form__list-item--radio {
+    margin-bottom: 22px;
   }
 }
