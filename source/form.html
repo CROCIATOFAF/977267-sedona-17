@@ -6,7 +6,6 @@
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -84,7 +83,7 @@
                 <label class="form__label form__label--contact-info" for="tel"><span class="contacts-label-short">Контактный</span> телефон*:</label>
                 <input class="form__input form__input--contacts" id="tel" type="tel" name="tel" pattern="((8|\+7)-?)?\(?\d{3}\)?-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}-?\d{1}" placeholder="Введите телефон" required>
                 <span class="form__input-background">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                  <svg version="1.0" id="phone-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
                     <g id="Page-1">
                       <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
                         <g id="phone" transform="translate(85.000000, 126.000000)">
@@ -102,7 +101,7 @@
                 <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                 <span class="form__input-background">
 
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <svg version="1.1" id="email-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                     <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
                   </svg>
                 </span>
@@ -178,7 +177,24 @@
           <button class="form__send-button button" type="submit">Отправить отзыв</button>
           <p class="obligatory-field">* — обязательные поля</p>
         </form>
+
       </section>
+
+      <div class="popup-failure">
+        <h3 class="popup-failire__header">Что-то пошло не так!</h3>
+        <p class="popup-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button popup-failure__button" type="submit">Oк</button>
+      </div>
+
+      <div class="popup-success">
+        <h3 class="popup-success__header">Ваш вызов отправлен!</h3>
+        <p class="popup-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.</p>
+        <p class="popup-success__text">В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <div class="popup-success__button-background">
+          <button class="button popup-success__button" type="submit">Закрыть окно</button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer container">
@@ -189,7 +205,7 @@
           <div class="footer-social__social-buttons">
             <a href="#" class="footer-social__link">
               <span class="visually-hidden">Твиттер</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+              <svg version="1.0" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
                 xml:space="preserve">
                 <g id="W6EeEF_1_">
                   <g>
@@ -202,7 +218,7 @@
 
             <a href="#" class="footer-social__link">
               <span class="visually-hidden">Фейсбук</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
+              <svg version="1.0" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
                 xml:space="preserve">
                 <path
                   d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
@@ -211,7 +227,7 @@
 
             <a href="#" class="footer-social__link">
               <span class="visually-hidden">Ютюб</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
+              <svg version="1.0" id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
                 xml:space="preserve">
                 <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
               </svg>

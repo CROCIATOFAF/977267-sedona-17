@@ -1,0 +1,86 @@
+.popup-failure {
+  display: none;
+  width: 320px;
+  height: 280px;
+  background-color: @background-color;
+  text-transform: uppercase;
+  // position: fixed;
+  // top: 50px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.popup-failire__header {
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 13px;
+  padding-top: 46px;
+}
+
+.popup-failure__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 0 45px;
+}
+
+.popup-failure__button {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  color: @background-color;
+  background-color: @main-color;
+  width: 180px;
+  height: 58px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .popup-failure {
+    width: 400px;
+    height: 347px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .popup-failire__header {
+    margin: 0;
+    padding: 0;
+    padding: 0 75px;
+    padding-top: 48px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup-failure__text {
+    padding-top: 25px;
+  }
+
+  .popup-failure__button {
+    margin-top: 39px;
+    width: 272px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
