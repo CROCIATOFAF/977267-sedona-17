@@ -1,6 +1,6 @@
 .form {
   margin: 0 auto;
-  margin-bottom: 74px;
+  margin-bottom: 61px;
 }
 
 .form__header {
@@ -372,6 +372,7 @@ fieldset {
 @media (min-width: @tablet-width) {
   .form {
     width: 648px;
+    position: relative;
   }
 
   .form__list-item--radio {
@@ -398,7 +399,6 @@ fieldset {
   .form__section--introduce {
     order: 2;
     width: 324px;
-    margin-top: 24px;
   }
 
   .form__section--contact-info {
@@ -409,9 +409,20 @@ fieldset {
 
   .form__section--impressions {
     order: 1;
-    width: 323px;
-    margin-top: 24px;
-    border-right: 1px inset @border-line-color;
+    width: 324px;
+    // margin-top: 24px;
+    // border-right: 1px inset @border-line-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 292px;
+      width: 1px;
+      background-color: @border-line-color;
+      right: 50%;
+      top: 0;
+    }
   }
 
   .form__section--sights-visited {
@@ -562,8 +573,8 @@ fieldset {
   }
 
   .form__section--impressions {
-    width: 479px;
-    margin-top: 9px;
+    width: 480px;
+    // margin-top: 9px;
 
     .form__header--radio {
       margin-left: 81px;
@@ -577,7 +588,7 @@ fieldset {
 
   .form__section--introduce {
     width: 480px;
-    margin-top: 9px;
+    // margin-top: 9px;
 
     .form__header--introduce {
       margin-left: 81px;
