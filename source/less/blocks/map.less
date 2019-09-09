@@ -1,10 +1,20 @@
 .map {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .map__image {
   width: 100%;
+  display: block;
+}
+
+.map__modal-map {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,5 +28,6 @@
   .map {
     width: 1200px;
     margin: 0 auto;
+    margin-bottom: 4px;
   }
 }

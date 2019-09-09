@@ -10,6 +10,11 @@
   background-position: bottom, center;
   background-size: 100%, cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
 }
 
 .inner-page__text-index-image {
@@ -38,6 +43,11 @@
     background-position: 0 130px, center;
     background-size: 100%, cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+      // background-size: 768px auto;
+    }
   }
 }
 
@@ -46,9 +56,14 @@
     position: relative;
     height: 518px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: 0 232px, center;
+    background-position: 0 232px, 0 -228px;
     background-size: 100%, cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      // background-size: 1200px auto;
+    }
   }
 
   .inner-page__text-index-image {
@@ -63,9 +78,14 @@
     position: relative;
     height: 518px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 0 243px, center;
+    background-position: 0 243px, 0 -217px;
     background-size: 100%, cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      // background-size: 1200px auto;
+    }
   }
 
   .inner-page__text-index-image {
