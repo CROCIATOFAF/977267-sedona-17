@@ -99,13 +99,23 @@
   }
 }
 
+.form__radio-button-input:focus:checked + .form__radio-button-circle {
+  background-color: @checkbox-color-active;
+}
+
 .form__radio-button-input:focus:checked + .form__radio-button-circle::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form__checkbox-input:focus:checked + .form__checkbox-tick::after {
   background-color: @checkbox-color-active;
 }
 
 .form__checkbox-input:focus:checked + .form__checkbox-tick::after {
-  background-color: @checkbox-color-hover;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
+
 
 .form__checkbox-tick {
   position: relative;
