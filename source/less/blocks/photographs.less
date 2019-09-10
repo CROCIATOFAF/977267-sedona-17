@@ -29,10 +29,14 @@
   border: none;
   text-decoration: none;
   background: transparent;
-  opacity: 0.3;
   padding: 0;
   padding-top: 5px;
   margin-right: 11px;
+}
+
+.photographs__button-icon {
+  fill: @like-icon-color-mobile;
+  opacity: 0.3;
 }
 
 .photographs {
@@ -50,11 +54,6 @@
     border-bottom: 1px solid #e5e5e5;
     padding-top: 22px;
     padding-bottom: 17px;
-  }
-
-  .photographs__button path {
-    fill: @like-icon-color-mobile;
-    opacity: 0.3;
   }
 }
 
@@ -146,11 +145,8 @@
     color: #ffffff;
   }
 
-  .photographs__button {
+  .photographs__button-icon {
+    fill: @like-icon-color-desktop;
     opacity: 1;
-
-    path {
-      fill: @like-icon-color-desktop;
-    }
   }
 }

@@ -55,6 +55,17 @@ gulp.task("webp", function() {
   .pipe(gulp.dest("source/img"));
 });
 
+var svgstore = require("gulp-svgstore");
+
+gulp.task ("sprite", function() {
+  return gulp.src([
+    "source/img/*.svg"
+  ])
+  .pipe(svgstore ({inlineSvg: true}))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+});
+
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include")
 
@@ -94,6 +105,7 @@ gulp.task("build", gulp.series(
   "webp",
   "copy",
   "css",
+  "sprite",
   "html"
 ));
 
